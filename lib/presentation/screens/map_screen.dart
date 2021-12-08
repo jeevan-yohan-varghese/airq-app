@@ -24,6 +24,7 @@ class _MapScreenState extends State<MapScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
+          appBar: AppBar(title: const Text("AirQ Map"),),
             body: BlocConsumer<MapCubit, MapState>(
       listener: (context, state) {
         if (state is MapSuccess) {
