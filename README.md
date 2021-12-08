@@ -1,7 +1,10 @@
-# airq_jyv
+# AirQ App
 
-A new Flutter project.
+Air quality monitoring app made in Flutter
 
+## Features
+- [x] Get data by device id
+- [x] Get data by location
 ## Getting Started
 
 This project is a starting point for a Flutter application.
