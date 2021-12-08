@@ -76,7 +76,9 @@ class HomeScreen extends StatelessWidget {
               height: 20,
             ),
             OutlinedButton(
-                onPressed: () {}, child: const Text("Air quality near me")),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/map');
+                }, child: const Text("Air quality near me")),
             const SizedBox(
               height: 20,
             ),

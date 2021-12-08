@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:airq_jyv/cubit/home/device_data_cubit.dart';
+import 'package:airq_jyv/cubit/map/map_cubit.dart';
 import 'package:airq_jyv/presentation/router/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -16,12 +17,14 @@ void main() async {
 class MyApp extends StatelessWidget {
   MyApp({Key? key}) : super(key: key);
   final ThemeData theme = ThemeData();
+  
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
         BlocProvider<DeviceDataCubit>(create: (context) => DeviceDataCubit()),
+        BlocProvider<MapCubit>(create: (context) => MapCubit()),
       ],
       child: MaterialApp(
         title: 'AirQ JYV',

@@ -1,4 +1,5 @@
 import 'package:airq_jyv/presentation/screens/home_screen.dart';
+import 'package:airq_jyv/presentation/screens/map_screen.dart';
 import 'package:flutter/material.dart';
 
 class AppRouter {
@@ -13,7 +14,10 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) {
           return HomeScreen();
         });
-
+      case '/map':
+        return MaterialPageRoute(builder: (_) {
+          return MapScreen();
+        });
       default:
         return MaterialPageRoute(builder: (_) {
           return HomeScreen();
